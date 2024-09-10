@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
+    groups:
+      aws:
+        patterns:
+          - "github.com/aws*"
+      all-other:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "github.com/aws*"
+
+# Example showing npm too.
+#  - package-ecosystem: npm
+#    directory: /
+#    schedule:
+#      interval: monthly
+#    groups:
+#      dep:
+#        patterns:
+#          - "*"

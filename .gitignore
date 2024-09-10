@@ -1,0 +1,46 @@
+# Binaries - i.e. all files without extension
+!*/
+!**.*
+
+# Editors
+.vscode
+.idea
+
+# OSX
+.DS_STORE
+
+# Terraform
+.terraform
+
+# Artilley
+node_modules
+report.json
+report.html
+
+# Test binary, built with `go test -c`
+*.test
+
+# Go stuff
+*.out
+c.out
+coverage.html
+.bin/
+
+# Local
+*.env
+!example.env
+launch.json
+vendor
+.history
+/app
+storage
+.air.toml
+.env
+.DS_Store
+.cache
+be-auth
+main
+tmp/
+
+# Config
+config/default.json
